@@ -2,12 +2,17 @@
     - first web
     - comment 2
 
-git pull
-ajilaa hiine
+## git commands 
 
-git add .
-git status
-git commit -m "test test"
-git push
+ - git pull
+   ajilaa hiine
 
- 
+    - git add .
+    - git status
+    - git commit -m "test test"
+    - git push
+
+- git log 
+- git status
+- git remote -vvv
+
