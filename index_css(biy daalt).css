@@ -93,7 +93,7 @@
   .logo {
     display: flex;
     align-items: center;
-    justify-content: center; /* Лого зургийг голлуулна */
+    justify-content: center; 
     margin-top: 5px;
   }
   
@@ -101,7 +101,7 @@
     width: 80px;
     height: 80px;
     transition: transform 0.3s ease;
-    cursor: pointer; /* Заагч гар нь линк байгааг илтгэнэ */
+    cursor: pointer; 
   }
   
   .logo img:hover {
@@ -355,7 +355,96 @@ padding-left: 100px;
   transition: background-color 0.3s;
 }
 
-.footerrqw{
-  width: 1000px;
-  background-color: #000b4d;
+.footerqw{
+  display: flex;
+  width: auto;
+  height: 250px;
+  margin-top: 50px;
+  background-color: #054895;
+}
+.hyag {
+  display: inline-block;
+  text-align: left;
+  line-height: 1.6;
+  color: white;
+  font-size: 16px;
+  font-family: sans-serif;
+  margin-left: 10px;
+  margin-top: 5px;
+
+}
+.local{
+    width: 20px; 
+    height: 20px;
+    margin-left: 70px;
+    margin-top: 8px;
+
+}
+.utas{
+  display: inline-block;
+  text-align: left;
+  line-height: 1.6;
+  color: white;
+
+  font-size: 16px;
+  font-family: sans-serif;
+  margin-left: 10px;
+  margin-top: 6px;
+ 
+}
+
+.phone{
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  margin-top: 8px;
+}
+.email{
+  display: inline-block;
+  text-align: left;
+  line-height: 1.6;
+  color: white;
+
+  font-size: 16px;
+  font-family: sans-serif;
+  margin-left: 10px; 
+  margin-top: 5px;
+}
+
+.mail{
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  margin-top: 8px;
+}
+.fbic{
+  width: 30px;
+  height: 30px;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+.fbic:hover{
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+}
+.grazygm{
+  width: 30px;
+  height: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.grazygm:hover{
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+}
+
+.bill{
+  width: 30px;
+  height: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.bill:hover{
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
 }
