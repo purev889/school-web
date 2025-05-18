@@ -13,14 +13,4 @@ document.getElementById("registerForm").addEventListener("submit", function (e) 
     lastName,
     phone,
     email,
-  };
-
-  emailjs.send("service_5se6cfm", "template_35sz2h7", templateParams)
-    .then((response) => {
-      alert("Амжилттай илгээгдлээ!");
-      document.getElementById("registerForm").reset();
-    })
-    .catch((error) => {
-      alert("Алдаа гарлаа: " + error.text);
-    });
-});
+  }:
