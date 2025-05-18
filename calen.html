@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Календарт төлөвлөгөө</title>
+    <link rel="icon" type="imange/x-icon" href="titlelogo.webp">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f5f9;
+      padding: 20px;
+    }
+
+    .calendar-container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      padding: 30px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #007ACC;
+      margin-bottom: 20px;
+    }
+
+    .month-selector {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .month-selector select {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .events {
+      list-style: none;
+      padding: 0;
+    }
+
+    .event-item {
+      background: #eaf3fb;
+      margin-bottom: 10px;
+      padding: 15px;
+      border-radius: 5px;
+      border-left: 5px solid #007ACC;
+    }
+
+    .event-date {
+      font-weight: bold;
+      color: #007ACC;
+    }
+
+    .event-title {
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="calendar-container">
+  <h2>2025 оны хичээлийн төлөвлөгөө</h2>
+  <div class="month-selector">
+    <label for="month">Сар сонгох:</label>
+    <select id="month">
+      <option value="1">1-р сар</option>
+      <option value="2">2-р сар</option>
+      <option value="3">3-р сар</option>
+      <option value="4">4-р сар</option>
+      <option value="5">5-р сар</option>
+      <option value="6">6-р сар</option>
+      <option value="7">7-р сар</option>
+      <option value="8">8-р сар</option>
+      <option value="9">9-р сар</option>
+      <option value="10">10-р сар</option>
+      <option value="11">11-р сар</option>
+      <option value="12">12-р сар</option>
+    </select>
+  </div>
+  <ul class="events" id="events-list">
+    <!-- Үйл ажиллагаанууд энд гарна -->
+  </ul>
+</div>
+
+<script>
+  const eventsData = {
+    1: [
+      { date: '1 сарын 4', title: 'Sports day Grade 1 - 12' },
+      { date: '1 сарын 8', title: 'Coffee hour with the Counselors' },
+      { date: '1 сарын 15', title: 'Cambridge International Conference' },
+      { date: '1 сарын 18', title: 'Diagnostic Assessment' },
+      { date: '1 сарын 23', title: 'Orchlong English /Debate/' },
+      { date: '1 сарын 29', title: 'Homeroom teacher and parent meeting' }
+    ],
+    2: [
+      { date: '2 сарын 5', title: 'Science Fair' },
+      { date: '2 сарын 12', title: 'Math Olympiad' },
+      { date: '2 сарын 19', title: 'Parent-Teacher Conference' },
+      { date: '2 сарын 26', title: 'Field Trip to Museum' }
+    ],
+    // Бусад саруудын мэдээллийг энд нэмнэ
+  };
+
+  const monthSelect = document.getElementById('month');
+  const eventsList = document.getElementById('events-list');
+
+  function renderEvents(month) {
+    eventsList.innerHTML = '';
+    const events = eventsData[month] || [];
+    if (events.length === 0) {
+      const noEvents = document.createElement('li');
+      noEvents.textContent = 'Энэ сард төлөвлөгдсөн үйл ажиллагаа байхгүй байна.';
+      eventsList.appendChild(noEvents);
+    } else {
+      events.forEach(event => {
+        const li = document.createElement('li');
+        li.className = 'event-item';
+        li.innerHTML = `
+          <div class="event-date">${event.date}</div>
+          <div class="event-title">${event.title}</div>
+        `;
+        eventsList.appendChild(li);
+      });
+    }
+  }
+
+  monthSelect.addEventListener('change', () => {
+    const selectedMonth = parseInt(monthSelect.value);
+    renderEvents(selectedMonth);
+  });
+
+  // Эхэнд 1-р сарын үйл ажиллагааг харуулах
+  renderEvents(1);
+</script>
+
+</body>
+</html>
