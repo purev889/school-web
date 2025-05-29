@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Мэдээ мэдээлэл</title>
+    <link rel="icon" type="imange/x-icon" href="titlelogo.webp">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+
+    .news-container {
+      max-width: 960px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .news-list {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .news-item {
+      display: flex;
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .news-item:hover {
+      transform: scale(1.01);
+    }
+
+    .news-image {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .news-content {
+      padding: 15px;
+      flex: 1;
+    }
+
+    .news-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    .news-meta {
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="news-container">
+    <h1>Мэдээ мэдээлэл</h1>
+    <div class="news-list">
+
+      <div class="news-item">
+        <img class="news-image" src="10iin-batsaanuud.jpg" alt="Mechatronics">
+        <div class="news-content">
+          <div class="news-title">10-р ангийн суралцагчид маань Мехатроник хичээлийн анхан шатны сургалтаа амжилттай дүүргэж батламжаа авлаа</div>
+          <div class="news-meta">2025.04.09 • 105 уншилт</div>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <img class="news-image" src="rubik.jpg" alt="Rubik">
+        <div class="news-content">
+          <div class="news-title">“Рубрик шоог хэн сайн эвлүүлэх вэ?” тэмцээн амжилттай зохион байгуулагдлаа</div>
+          <div class="news-meta">2025.04.03 • 77 уншилт</div>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <img class="news-image" src="altan-tsom - Copy.jpg" alt="Volleyball">
+        <div class="news-content">
+          <div class="news-title">Волейболын тэмцээн амжилттай зохион байгуулагдлаа</div>
+          <div class="news-meta">2025.04.02 • 127 уншилт</div>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <img class="news-image" src="bagshnar.jpg" alt="Beijing">
+        <div class="news-content">
+          <div class="news-title">Мандах лицейн удирдлагууд Бээжин хотод аялал зохион байгууллаа</div>
+          <div class="news-meta">2025.01.07 • 144 уншилт</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
