@@ -10,11 +10,11 @@ body {
   min-width: 100px;
 }
 
-h2 {
+.garchig{
   color: #512da8;
   text-align: center;
-  margin-bottom: 230px;
-  padding: 90px;
+  
+  margin-left: 50px;
   font-weight: 700;
   font-size: 50px;
   
@@ -88,4 +88,24 @@ button:hover {
     margin: 0 10px;
   }
 }
+.logob{
+  justify-content: center;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  align-items: center;
+  margin-left: 300px;
 
+}
+.logob:hover {
+  transform: translateY(-7px);
+  transition: transform 1.0s ease;
+
+}
+
+
+.zurag{
+  width: 800px;
+  height: 500px;
+
+}
